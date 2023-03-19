@@ -4,12 +4,12 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'javac BubbleSortExample.java'
+                sh "javac BubbleSort/BubbleSortExample.java"
             }
         }
         stage('Run') {
             steps {
-                sh 'java BubbleSortExample'
+                sh "java BubbleSort/BubbleSortExample"
             }
         }
     }
