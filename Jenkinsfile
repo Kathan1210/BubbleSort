@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Run') {
             steps {
-                bat 'java BubbleSort/BubbleSortExample'
+                bat 'java BubbleSortExample'
             }
         }
     }
