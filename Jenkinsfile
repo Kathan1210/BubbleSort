@@ -4,17 +4,17 @@ pipeline {
     stages {
         stage('Pwd') {
             steps {
-                sh 'pwd'
+                bat 'pwd'
             }
         }
         stage('Build') {
             steps {
-                sh "javac BubbleSort/BubbleSortExample.java"
+                bat "javac BubbleSort/BubbleSortExample.java"
             }
         }
         stage('Run') {
             steps {
-                sh "java BubbleSort/BubbleSortExample"
+                bat "java BubbleSort/BubbleSortExample"
             }
         }
     }
